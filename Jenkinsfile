@@ -22,6 +22,7 @@ pipeline {
             steps {
                 echo "Are you returning from Github?"
                 echo "I mean is Github triggering a build?"
+                echo "I'm the dev branch, are you building?"
             }
         }
         stage("Running my script") {
