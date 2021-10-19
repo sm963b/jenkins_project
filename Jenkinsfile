@@ -21,6 +21,7 @@ pipeline {
         stage("Github return") {
             steps {
                 echo "Are you returning from Github?"
+                echo "I mean is Github triggering a build?"
             }
         }
     }
