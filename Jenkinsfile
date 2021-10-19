@@ -24,5 +24,12 @@ pipeline {
                 echo "I mean is Github triggering a build?"
             }
         }
+        stage("Running my script") {
+            steps {
+                script {
+                    println("I'm in the dev branch hustling.")
+                }
+            }
+        }
     }
 }
