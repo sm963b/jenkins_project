@@ -2,34 +2,34 @@ pipeline {
     agent any
 
     stages {
-        stage("build") {
+        stage('build') {
             steps {
                 //Where the script goes to run on Jenkins agent
                 echo 'Building the application'
-                }
             }
-        stage("test") {
+        }
+        stage('test') {
             steps {
                 echo 'Testing the application.'
             }
         }
-        stage("deploy") {
+        stage('deploy') {
             steps {
                 echo 'Deploying the application.'
             }
         }
-        stage("Github return") {
+        stage('Github return') {
             steps {
-                echo "Are you returning from Github?"
-                echo "I mean is Github triggering a build?"
+                echo 'Are you returning from Github?'
+                echo 'I mean is Github triggering a build?'
                 echo "I'm the dev branch, are you building?"
             }
         }
-        stage("Running my script") {
+        stage('Running my script') {
             steps {
-                script {
+            }
+            script {
                     println("I'm in the dev branch hustling.")
-                }
             }
         }
     }
