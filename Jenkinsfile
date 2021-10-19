@@ -18,5 +18,10 @@ pipeline {
                 echo 'Deploying the application.'
             }
         }
+        stage("Github return") {
+            steps {
+                echo "Are you returning from Github?"
+            }
+        }
     }
 }
